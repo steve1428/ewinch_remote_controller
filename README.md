@@ -3,9 +3,9 @@
  Based on LILYGO® TTGO ESP32-Paxcounter LoRa32 V2.1 1.6 Version 915MHZ LoRa ESP-32 OLED
  (http://www.lilygo.cn/prod_view.aspx?TypeId=50060&Id=1271&FId=t3:50060:3)
  
- Note the version of the ESP-32 we recieved recently have differnet pin numbers for the OLED than are used in the
+ Note that our version of the ESP-32  has differnet pin numbers for the OLED than are used in the
  Rx and Tx code from the OP
- look for changes I've made to make it work with the current version of the esp32 (OLED pins 21,22)
+ look for changes I've made to make it work with another version of the esp32 (OLED pins 21,22)
  
  see https://www.youtube.com/watch?v=5IkagHkxbxY
 
