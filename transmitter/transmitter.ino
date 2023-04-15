@@ -21,7 +21,7 @@ static int myMaxPull = 75;  // 0 - 127 [kg], must be scaled with VESC ppm settin
 #define SS      18   // GPIO18 -- SX1278's CS
 #define RST     14   // GPIO14 -- SX1278's RESET
 #define DI0     26   // GPIO26 -- SX1278's IRQ(Interrupt Request)
-#define BAND  868E6
+#define BAND  915E6
 
 SSD1306 display(0x3c, 21, 22);
 int rssi = 0;
@@ -81,11 +81,11 @@ void setup() {
   Serial.begin(115200);
   
   //OLED display
-  pinMode(16,OUTPUT);
-  pinMode(2,OUTPUT);
-  digitalWrite(16, LOW);    // set GPIO16 low to reset OLED
+  pinMode(21,OUTPUT);
+  pinMode(22,OUTPUT);
+  digitalWrite(21, LOW);    // set GPIO16 low to reset OLED
   delay(50); 
-  digitalWrite(16, HIGH); // while OLED is running, must set GPIO16 in high
+  digitalWrite(21, HIGH); // while OLED is running, must set GPIO16 in high
 
   //lora init
   SPI.begin(SCK,MISO,MOSI,SS);
